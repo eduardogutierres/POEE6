@@ -258,13 +258,15 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(826, 242);
+            tabPage2.Size = new Size(826, 245);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consulta";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(3, 3);
             dataGridView2.MultiSelect = false;

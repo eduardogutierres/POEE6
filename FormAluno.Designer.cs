@@ -68,7 +68,7 @@
             materialTabControl1.Multiline = true;
             materialTabControl1.Name = "materialTabControl1";
             materialTabControl1.SelectedIndex = 0;
-            materialTabControl1.Size = new Size(618, 389);
+            materialTabControl1.Size = new Size(685, 389);
             materialTabControl1.TabIndex = 0;
             materialTabControl1.Enter += materialTabControl1_Enter;
             // 
@@ -89,7 +89,7 @@
             tabPage1.Location = new Point(4, 31);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(610, 354);
+            tabPage1.Size = new Size(677, 354);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cadastro";
             tabPage1.UseVisualStyleBackColor = true;
@@ -438,7 +438,7 @@
             tabPage2.Location = new Point(4, 31);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(610, 348);
+            tabPage2.Size = new Size(677, 354);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consulta";
             tabPage2.UseVisualStyleBackColor = true;
@@ -447,6 +447,8 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(3, 3);
             dataGridView1.MultiSelect = false;
@@ -548,7 +550,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(624, 456);
+            ClientSize = new Size(691, 456);
             Controls.Add(materialTabControl1);
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = materialTabControl1;

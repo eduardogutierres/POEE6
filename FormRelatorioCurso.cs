@@ -13,6 +13,7 @@ using Spire.Pdf.Graphics;
 using Spire.Pdf.Tables;
 using Spire.Pdf;
 using System.Diagnostics;
+using Spire.Pdf.Print;
 
 namespace Projeto4
 {
@@ -22,6 +23,7 @@ namespace Projeto4
                       "uid=root;" +
                       "pwd=;" +
                       "database=academico";
+        PdfDocument doc;
         public FormRelatorioCurso()
         {
             InitializeComponent();
@@ -60,7 +62,7 @@ namespace Projeto4
             con.Close();
 
             //Inicio geração PDF
-            PdfDocument doc = new PdfDocument();
+            doc = new PdfDocument();
             PdfSection sec = doc.Sections.Add();
             sec.PageSettings.Width = PdfPageSize.A4.Width;
             PdfPageBase page = sec.Pages.Add();
@@ -100,9 +102,11 @@ namespace Projeto4
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+            doc = new PdfDocument();
             MontaRelatorio();
-            PdfDocument doc = new PdfDocument();
-            doc.Print();
+            PdfPrintSettings ps = new PdfPrintSettings();
+            ps.PrinterName = cboImpressora.Text;
+            doc.Print(ps);
         }
 
         private void btn_visualizar_Click(object sender, EventArgs e)

@@ -69,7 +69,7 @@
             materialTabControl1.Multiline = true;
             materialTabControl1.Name = "materialTabControl1";
             materialTabControl1.SelectedIndex = 0;
-            materialTabControl1.Size = new Size(673, 477);
+            materialTabControl1.Size = new Size(840, 477);
             materialTabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -466,13 +466,15 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(665, 449);
+            tabPage2.Size = new Size(832, 449);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Consulta";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
+            dataGridView3.AllowUserToAddRows = false;
+            dataGridView3.AllowUserToDeleteRows = false;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Location = new Point(3, 3);
             dataGridView3.MultiSelect = false;
@@ -480,7 +482,7 @@
             dataGridView3.ReadOnly = true;
             dataGridView3.RowTemplate.Height = 25;
             dataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView3.Size = new Size(659, 392);
+            dataGridView3.Size = new Size(823, 392);
             dataGridView3.TabIndex = 4;
             dataGridView3.CellContentClick += dataGridView3_CellContentClick;
             dataGridView3.Enter += dataGridView3_Enter;
@@ -571,7 +573,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(679, 544);
+            ClientSize = new Size(846, 544);
             Controls.Add(materialTabControl1);
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = materialTabControl1;
